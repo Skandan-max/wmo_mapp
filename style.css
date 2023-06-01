@@ -1,0 +1,408 @@
+*{
+    padding-left: 0%;
+    margin-left: 0%;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color:white
+  
+}
+
+.sidebar{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    background-color: rgba(0, 255, 255, 0.813);
+    width: 15%;
+    font-size: 22px;
+    z-index: 10;
+}
+
+/* html[data-theme='dark'] {
+    background: #000;
+    filter: invert(1) hue-rotate(180deg);
+} */
+
+/* 
+.sidebar h1{
+    size: 0cap;
+} */
+
+.sidebar-name{
+    height: 20px;
+    padding: 1.5em;
+}
+
+.sidebar ul{
+    gap: 1.2em;
+    list-style-type: none;
+    padding-left: 1em;
+    padding-bottom: 2em;
+}
+
+.sidebar li{
+    border: 1px rgba(0, 255, 255, 0.692);
+    border-radius: 30px;
+    padding: 0.4em;
+    margin: 10px;
+}
+
+
+.box :nth-child(3){
+    /* color: pink ; */
+    padding-right: none;
+    /* width: 10%; */
+    margin-right: 0%;
+    /* font-size: 12px; */
+}
+
+
+
+hover .sidebar ul{
+    background-color: #ffffff;
+}
+
+a:after{
+    background-color: #ff3c78;
+    width: 0;
+    bottom: -10px;
+    height: 4px;
+    transition: 0.3s;
+} 
+
+.sidebar a:hover{
+    color: aqua;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+.li:after{
+    background-color: #ffffff;
+    width: 0%;
+    height: 25px;
+    transition: 0.3s;
+}
+
+.li:hover{
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 0.4em;
+    margin: 10px;
+    transition-duration: 0.7s;
+}
+.li:hover:after{
+    width: 100%;
+}
+
+.search-bar input{
+    border-radius: 15px;
+    color: aqua;
+    height: 30px;
+    margin-top: 1.8em;
+}
+
+
+.user{
+    display: flex;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    padding-right: 2rem;
+}
+
+.user i{
+    size: 32px;
+}
+
+header{
+    left: 1%;
+    width: 100%;
+display: flex;
+justify-content: space-between;
+box-shadow: 2px 2px 10px 2px rgb(0,0,0,0.4);
+}
+
+#nav-toggle {
+    display: none;
+}
+
+/* .conatiner{
+    display: flex;
+    justify-content: space-around;
+} */
+
+.conatiner{
+    display :grid;
+    grid-template-columns: repeat(3,1fr);
+height: auto;
+}
+
+#nav-toggle:checked+.sidebar {
+    width: 5.6%;
+    padding-left: 0%;
+}
+
+#nav-toggle:checked ~ .main-con{
+    margin-left: 5.6%;
+}
+
+
+#nav-toggle:checked+ .sidebar .sbelements a span ,
+#nav-toggle:checked+ .sidebar .sbelements li a span {
+    visibility: none;
+}
+
+.main-con{
+   margin-left: 15%;
+   transform: left 1000ms;
+}
+
+#nav-toggle:checked+ .sidebar .sidebar-name h1 ,
+#nav-toggle:checked + .sidebar li a{
+    padding-left: none;
+}
+
+
+#nav-toggle:checked+ .sidebar .sidebar-name h1 span,
+#nav-toggle:checked + .sidebar li a span{
+    display: none;
+}
+
+
+.main-con h1{
+    padding-left: 1rem;
+}
+
+
+
+
+.conatiner1 a{
+    text-decoration: none;
+    color: rgb(71, 236, 236);
+    font-weight: bold;
+    font-size: 20px;
+    font-family:varela round ;
+}
+
+.box{
+    margin: 7%;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(233, 231, 231);
+    /* border:3px black solid; */
+    padding: 0.5rem 1rem;
+    width: auto;
+    border-radius: 15px;
+    font-family:varela round ;
+    font-size: 18px;
+    color: rgb(9, 15, 15);
+    padding-left: 6%;
+}
+
+.box h3{
+    text-align: center;
+    font-size: 24px;
+    color:rgb(50, 251, 251) ;
+}
+
+.box button{
+    border-radius: 11px;
+    
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.box input{
+  border-radius: 20px;
+}
+
+.conatiner1{
+    display :grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.notif1{
+    background-color: #25D366;
+    padding: 1.75%;
+    border-radius: 15px;
+    color: white;
+}
+
+.notif2{
+   background-image: linear-gradient(180deg,#dc1d9c,rgb(27, 27, 145));
+   padding: 3%;
+   border-radius: 15px;
+}
+.notif3{
+    background-color:  #0077b5;
+    padding:0.7%;
+    border-radius: 15px;
+    /* line-gap-override: o.5em; */
+}
+
+.box h4{
+    display: flex;
+   /* border : 1px solid black; */
+   border-radius: 20px;
+   height: 12%;
+   font-size: 14px;
+   padding: none ;
+   margin: none;
+}
+
+.conatiner1 h5{
+    width: auto ;
+}
+.webox{
+  height: 200px;
+}
+
+.footer{
+    position: fixed;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+}
+
+.box {
+    height: auto;
+}
+
+
+@media screen and (max-width: 960px)
+{
+
+   .sidebar {
+        width: 5.6%;
+        padding-left: 0%;
+        width: 74px;
+        
+    }
+    
+    
+    
+.sidebar .sbelements a span ,
+.sidebar .sbelements li a span {
+        visibility: none;
+        padding-left: 0%;
+        margin-left: 0%;
+    }
+
+.sidebar .sidebar-name h1 ,
+.sidebar li a{
+        padding-left: none;
+        margin-left: 0%;
+    }
+    
+    
+.sidebar .sidebar-name h1 span,
+ .sidebar li a span{
+        display: none;
+        padding-left: 0%;
+        margin-left: 0%;
+    }
+    
+}    
+
+
+@media screen and (max-width: 620px)
+{
+
+   .sidebar {
+        width: 5.6%;
+        padding-left: 0%;
+        width: 74px;
+        
+    }
+    
+    
+    
+.sidebar .sbelements a span ,
+.sidebar .sbelements li a span {
+        visibility: none;
+        padding-left: 0%;
+        margin-left: 0%;
+    }
+
+.sidebar .sidebar-name h1 ,
+.sidebar li a{
+        padding-left: none;
+        margin-left: 0%;
+    }
+    
+    
+.sidebar .sidebar-name h1 span,
+ .sidebar li a span{
+        display: none;
+        padding-left: 0%;
+        margin-left: 0%;
+    }
+
+
+
+    header{
+        display: block;
+        /* margin-left: 20px; */
+    }
+
+
+    .conatiner{
+        display: block;
+    }
+    
+
+    .conatiner1{
+        display: block;
+    }
+}   
+
+
+@media screen and (max-width: 420px)
+{
+
+   .sidebar {
+      left: -100%;
+      margin-top: 34px;  
+    }
+    
+    
+    .main-con{
+        margin-left: 0%;
+    }
+
+    header{
+        display: block;
+        /* margin-left: 20px; */
+        padding-left: 0%;
+        margin-right: 30px;
+        padding-right: 30px;
+    }
+
+
+    .conatiner{
+        display: block;
+        padding-left: 0%;
+    }
+    
+
+    .conatiner1{
+        display: block;
+    }
+
+    .sidebar .sbelements a span ,
+.sidebar .sbelements li a span {
+        visibility: visible;
+        padding-left: 0%;
+        margin-left: 0%;
+    }
+
+    #nav-toggle:checked +.sidebar{
+        left:0% !important;
+        z-index: 69;
+        width: 100px;
+        opacity: 10;
+    }
+}   
